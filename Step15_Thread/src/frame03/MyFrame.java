@@ -9,6 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 import test.mypac.AnotherThread;
+import test.mypac.CountThread;
 
 public class MyFrame extends JFrame implements ActionListener{
 	
@@ -43,15 +44,7 @@ public class MyFrame extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("새로운 스레드를 시작합니다.");
-		//스레드 객체를 생성해서
-		Thread t=new AnotherThread();
-		/*
-		 * start() 메소드를 호출하면 새로운 스레드가 시작된다.
-		 * 새로운 스레드(작업단위)는 위에서 생성한 스레드 객체의 run()메소드가 자동으로 호출되면서 시작된다.
-		 * run() 메소드의 리턴 여부와 상관없이 start() 메소드는 바로 리턴된다.
-		 * start() 메소드를 호출한 스레드는 main 스레드이기 때문에 main 스레드는 또 다른 작업을 할 수가 있다.
-		 */
-		t.start();
+		System.out.println("카운트 다운을 시작합니다.");
+		new CountThread().start();
 	}
 }

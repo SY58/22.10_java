@@ -46,11 +46,11 @@ public class MyFrame extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		System.out.println("카운트 다운을 시작합니다.");
 				
-		//Runnable 인터페이스를 구현한 클래스로 객체를 생성해서
+		// Runnable 인터페이스를 구현한 클래스로 객체를 생성해서
 		//Runnable r = new CountRunnable();
-		//Thread 객체를 생성하면서 인자로 전달
+		// Thread 객체를 생성하면서 인자로 전달
 		//Thread t=new Thread(r);
-		//Thread 객체의 start() 메소드를 호출해서 새로운 스레드 시작시키기
+		// Thread 객체의 start() 메소드를 호출해서 새로운 스레드 시작시키기
 		//t.start();
 		
 		//위의 3줄을 한 줄로 작성하면
