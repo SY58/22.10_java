@@ -15,7 +15,8 @@ public class MemberDto {
 		this.name = name;
 		this.addr = addr;
 	}
-	//private 필드를 위한 접근accesser를 만들어야한다.
+
+	//private 필드를 위한 접근자accessor를 만들어야한다.
 
 	public int getNum() {
 		return num;
